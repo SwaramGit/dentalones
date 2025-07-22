@@ -1,19 +1,24 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import Head from 'next/head'
 
 export default function Terms() {
   return (
-    <div className="bg-white min-h-screen px-6 py-12 max-w-3xl mx-auto text-gray-800">
+    <>
       <Head>
         <title>Terms and Conditions – Dental One</title>
-        <meta name="description" content="Read the terms and conditions for using Dental One's services and mobile application." />
-        <meta name="keywords" content="Dental One terms, dental app policies, user agreement, conditions of use" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="UTF-8" />
+        <meta name="description" content="Terms for using the Dental One mobile app and services." />
       </Head>
-      <div className="mt-4">
-        <Image src="/logo.jpeg" alt="Logo" width={128} height={64} />
-      </div>
-    </div>
+      <main className="max-w-3xl mx-auto px-4 py-10 text-gray-800">
+        <h1 className="text-3xl font-bold mb-4">Terms & Conditions</h1>
+        <p className="mb-4">
+          By using the Dental One app, you agree to our terms which include responsible usage, accurate data entry, and compliance with our privacy policy.
+        </p>
+        <p className="mb-4">
+          We reserve the right to modify or suspend access to features as needed for maintenance or updates.
+        </p>
+        <p>
+          Your continued use of the app signifies your acceptance of these terms.
+        </p>
+      </main>
+    </>
   );
 }
